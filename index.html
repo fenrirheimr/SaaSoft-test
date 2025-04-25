@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учетные записи</title>
+
+    <!-- Предзагрузка шрифтов и иконок -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+
+    <!-- Favicon (можно заменить на свой) -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+
+    <!-- Mobile meta -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Учетные записи">
+
+    <!-- Vuetify рекомендует это для правильного масштабирования -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+
+    <!-- Для поддержки старых браузеров (опционально) -->
+    <script nomodule>
+        window.addEventListener('DOMContentLoaded', () => {
+            const app = document.createElement('div');
+            app.innerHTML = `
+        <style>
+          .unsupported-browser {
+            font-family: 'Roboto', sans-serif;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid #ff5252;
+            border-radius: 4px;
+            color: #333;
+          }
+          .unsupported-browser h1 {
+            color: #ff5252;
+          }
+        </style>
+        <div class="unsupported-browser">
+          <h1>Неподдерживаемый браузер</h1>
+          <p>Для работы приложения требуется современный браузер с поддержкой JavaScript модулей.</p>
+          <p>Пожалуйста, обновите ваш браузер или используйте Chrome, Firefox, Edge или Safari последней версии.</p>
+        </div>
+      `;
+            document.body.appendChild(app);
+        });
+    </script>
+</body>
+
+</html>

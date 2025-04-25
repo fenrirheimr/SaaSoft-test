@@ -1,0 +1,6 @@
+// Переопределение переменных Vuetify
+@use 'vuetify/settings' with (
+  $color-pack: true,
+  $body-font-family: 'Roboto', // Шрифт по умолчанию
+  $border-radius-root: 4px
+);
